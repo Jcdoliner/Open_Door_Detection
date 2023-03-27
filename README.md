@@ -1,5 +1,5 @@
 # Open Door Detection
-Arduino Project using an Ultrasonic sensor and a Active Buzzer to alert that a door has been let open.
+Very simple Arduino Project using an Ultrasonic sensor and a Active Buzzer to alert that a door has been let open.
 
 
 # Code Operation
