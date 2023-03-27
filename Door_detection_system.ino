@@ -1,6 +1,7 @@
 /*
+  First part of the Code for creating the Ultrasonic sensor interface
+  
   Ultrasonic Sensor HC-SR04 and Arduino Tutorial
-
   by Dejan Nedelkovski,
   www.HowToMechatronics.com
 
@@ -35,6 +36,18 @@ void loop() {
   Serial.print("Distance: ");
   Serial.println(distance);
   Serial.println(dooropen);
+  /*
+  instructions to activate the active buzzer:
+  
+  if  it is sensed that the door opened (Sensor detected a distance of at least 10cm)
+  then set the door open in the code and delay for a second
+  
+  if the door was closed and the sensor captured the required distance the
+  "dooropen" variable becomes true and the buzzer is active
+  
+  if the door is then sensed to close after it was already open
+  the buzzer will turn off.
+  */
   if (distance<=10){
     delay(1000);
     if(dooropen==false){
